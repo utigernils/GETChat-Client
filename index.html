@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suva Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="media/logo.png" alt="Suva Logo" class="logo">
+        </div>
+    </header>
+    <main>
+        <messages>
+            <div class="message shown">
+                <div class="message-main">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <path d="M9.34 29.634a1.535 1.535 0 100-3.07 1.535 1.535 0 000 3.07zM13.945 12.747h17.4a1.023 1.023 0 100-2.047h-17.4a1.024 1.024 0 000 2.047zM13.945 20.934h17.4a1.023 1.023 0 100-2.047h-17.4a1.024 1.024 0 000 2.047zM9.34 13.258a1.535 1.535 0 100-3.07 1.535 1.535 0 000 3.07zM9.34 21.446a1.535 1.535 0 100-3.07 1.535 1.535 0 000 3.07z" fill="currentColor"></path>
+                        <path d="M47.08 16.49a3.182 3.182 0 00-.747-1.007l-.838-.849a3.246 3.246 0 00-2.366-1.01 3.25 3.25 0 00-2.332.996l-2.998 3.025V4.047c0-.547-.213-1.06-.6-1.447s-.9-.6-1.447-.6H5.047c-.547 0-1.06.213-1.447.6S3 3.5 3 4.047v39.915c0 .54.218 1.068.6 1.449.386.386.9.598 1.447.598h30.705c.547 0 1.061-.212 1.447-.598.38-.381.6-.909.6-1.449V28.994l8.585-8.69c.038-.03.074-.064.108-.1a3.304 3.304 0 00.909-2.43 3.3 3.3 0 00-.321-1.284zM35.752 43.963H5.047V4.047h30.705v15.662l-7.332 7.396c-.05-.008-.095-.03-.146-.03H13.945a1.024 1.024 0 000 2.047H26.42l-1.052 1.061a1.028 1.028 0 00-.24.38l-2.313 6.552a1.024 1.024 0 001.308 1.305l6.507-2.314c.145-.052.277-.136.385-.245l4.737-4.794v12.895zm9.525-25.597c-.05.13-.117.249-.205.357a.893.893 0 00-.05.047L29.724 34.256l-4.263 1.516 1.522-4.31 15.281-15.415a1.206 1.206 0 011.761.012l.902.91a1.272 1.272 0 01.35 1.397z" fill="currentColor"></path>
+                    </svg>
+                    <div class="message-content">
+                        <h2>Titel:<input id="title-input" type="text" style="color: #ff8200; font-size: 4vh;"></h2>
+                        <p>Inhalt:<textarea id="content-input"></textarea></p>
+                    </div>
+                </div>
+                <div class="message-footer">
+                    <p>Gesendet von <input id="sender-input" type="text" style="width: 50%;"></p>
+                    <button id="send-button">Nachricht senden</button>
+                </div>
+            </div>
+        </messages>
+        <h4>GETChat von Utigernils | Client</h4>
+    </main>
+    <script src="sendMessage.js"></script>
+</body>
+</html>
