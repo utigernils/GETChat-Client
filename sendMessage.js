@@ -8,7 +8,6 @@ sendButton.addEventListener('click', async function() {
   var title = titleInput.value;
   var content = contentInput.value;
   var sender = senderInput.value;
-    console.log(title);
 
   const MSGurl = "http://192.168.1.1:5000/create_message?title=" + title +"&content=" + content + "&sender=" + sender;
 
